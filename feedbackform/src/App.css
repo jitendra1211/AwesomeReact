@@ -5,14 +5,19 @@ body{
   border-bottom:  2px solid blue;
 }
 .label{
-  font-size: 10 !important;
-  font-weight: 600;
+  font-size: 12px !important;
+  font-weight: 600 !important;
 }
 .input{
-  height: 10 !important;
+  height: 32px !important;
 }
 .input:focus{
   box-shadow: 0 0 3px rgb(122, 12, 224) !important;  
+}
+
+.input:required:valid{
+  box-shadow: 0 0 3px rgb(138, 236, 9) !important;
+  background-image: none !important;
 }
 
 

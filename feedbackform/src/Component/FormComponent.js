@@ -2,14 +2,20 @@ import React, { Component } from 'react';
 import {Row,Col, Button, Form, FormGroup,Label,Input} from 'reactstrap';
 import  '../index.css';
 
+
+
 class Formtab extends Component{
         constructor(props){
             super(props);
             this.state={
-                boxShadow: ''
+                textField:'',
+                email:'',
+                radio:'',
+                name:'',
+                contact:''
             }
         }
-
+    
     render(){
         return(
             <div className="row p-3 bg-light">
@@ -21,8 +27,22 @@ class Formtab extends Component{
                     <Form>
                         <Row>
                             <Col sm={6}>
-                                <FormGroup className='label '>
-                                    <Label className='' style={{fontSize:12, fontWeight:600}}for='text'>Text Field</Label>
+                                <FormGroup >
+                                    <Label className='label' for='text'>Text Field</Label>
+                                    <Input  className='input' type='text' name='formfield' id='text' valid={false}  invalid={false}/>
+                                </FormGroup>
+                            </Col>
+                            <Col sm={6}>
+                                <FormGroup >
+                                    <Label className="label" for='email'>Email</Label>
+                                    <Input className='input'  type='email' name='email' id='email' valid={true}/>
+                                </FormGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={6}>
+                                <FormGroup >
+                                    <Label className='label' for='text'>Text Field</Label>
                                     <Input  className='input' type='text' name='formfield' id='text' valid={false}  invalid={false}/>
                                 </FormGroup>
                             </Col>

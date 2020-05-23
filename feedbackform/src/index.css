@@ -12,16 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.label{
-  font-size: 10 !important;
-  font-weight: 600;
-}
-.input{
-  height: 10 !important;
-}
-.input:focus{
-  box-shadow: 0 0 3px rgb(122, 12, 224) !important;  
-}
-.input:valid{
-  background-color: red;
-}
